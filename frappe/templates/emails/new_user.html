@@ -1,0 +1,22 @@
+<p>
+	{{_("Hi")}} {{ first_name }}{% if last_name %} {{ last_name}}{% endif %},
+</p>
+{% set site_link = "<a href='https://sveena.ch/'>https://sveena.ch/</a>" %}
+<p>{{_("Es wurde ein Account auf sveena.ch für Dich eingerichtet")}}.</p>
+<p>{{_("Deine Login ID ist")}}: <b>{{ user }}</b>
+<p>{{_("Klicke auf den Link unten und setze Dein Password")}}.</p>
+
+<p style="margin: 15px 0px;">
+	<a href="{{ link }}" rel="nofollow" class="btn btn-primary">{{ _("Passwort setzen") }}</a>
+</p>
+
+<br>
+<p style="margin-top: 15px">
+	{{_("Liebe Grüsse")}},<br>
+	sveena
+</p>
+<br>
+<p>
+	{{_("Du kannst alternativ auch den nachfolgenden Link in Deinen Webbrowser kopieren:")}}<br>
+	<a href="{{ link }}">{{ link }}</a>
+</p>
